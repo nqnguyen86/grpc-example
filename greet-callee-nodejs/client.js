@@ -28,22 +28,8 @@ async function main() {
         last_name: process.argv[3] || 'Unknow last'
     };
     //Promise
-    let result = await stub.Greet({
-        greeting: greetRequest
-    }, function (err, response) {
-        if (err) {
-            console.error(err);
-        } else {
-            console.log('Response from NodeJS Greet: ', response.result);
-        }
-    });
-
-    //Tranditional way
-    // stub.Greet({
-    //     greeting: {
-    //         first_name: "Viet",
-    //         last_name: "Quang",
-    //     }
+    // let result = await stub.Greet({
+    //     greeting: greetRequest
     // }, function (err, response) {
     //     if (err) {
     //         console.error(err);
@@ -51,6 +37,21 @@ async function main() {
     //         console.log('Response from NodeJS Greet: ', response.result);
     //     }
     // });
+
+    //Tranditional way
+    stub.Greet({
+        greeting: {
+            first_name: "Viet",
+            last_name: "Quang",
+        }
+    }, function (err, response) {
+        if (err) {
+            console.error(err);
+        } else {
+            console.log('Response from NodeJS Greet: ', response.result);
+        }
+    });
+    console.log('Finish')
 }
 
 main();

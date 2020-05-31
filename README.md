@@ -1,4 +1,6 @@
-# gRPC example on Go server and clients as Go, NodeJs,...
+# gRPC example 
+
+Goal: make connections form Go server to clients using different lanaguages as Go, NodeJs,...
 
 ## Install on Windows
 
@@ -18,7 +20,7 @@
 
     `$ go get github.com/golang/protobuf/protoc-gen-go@v1.3`
 
-Note: I recommend use below v1.4 because some problems of higher versions
+Note: I recommend use below v1.4 because some limitations of higher versions until my done this project
 ref: https://www.reddit.com/r/golang/comments/fe3a4k/documentation_on_getting_grpc_working_with_the/
 
 Ref to install: https://grpc.io/docs/languages/go/quickstart/
