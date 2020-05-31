@@ -2,6 +2,8 @@
 
 Goal: make connections form Go server to clients using different lanaguages as Go, NodeJs,...
 
+Lession learnt: name of parameters of the client needs to exactly as defined protocol buffers 
+
 ## Install on Windows
 
 - Install Go
